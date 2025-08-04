@@ -18,12 +18,14 @@ namespace PiramideRectangularFinalProg.Windows
 
         private void frmPiramides_Load(object sender, EventArgs e)
         {
-            cantidad = repositorio.getCantidadPiramides();
+            piramides = repositorio.GetPiramides();
+            cantidad = piramides.Count;
+
             if (cantidad > 0)
             {
-                piramides = repositorio.GetPiramides();
                 MostrarDatosEnGrilla();
             }
+
             MostrarCantidadPiramides();
         }
 

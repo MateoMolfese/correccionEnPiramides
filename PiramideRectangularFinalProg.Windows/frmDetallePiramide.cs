@@ -33,7 +33,8 @@ namespace PiramideRectangularFinalProg.Windows
                 txtLado.Text = piramide.LadoBase.ToString();
                 txtAltura.Text = piramide.Altura.ToString();
                 txtCantidadLados.Text = piramide.CantidadLados.ToString();
-
+                txtColor.Text = piramide.Color.ToString();
+                txtMaterial.Text = piramide.Material.ToString();
                 txtVolumen.Text = piramide.CalcularVolumen().ToString("N2");
                 txtAreaLateral.Text = piramide.CalcularAreaLateral().ToString("N2");
                 txtAreaTotal.Text = piramide.CalcularAreaTotal().ToString("N2");

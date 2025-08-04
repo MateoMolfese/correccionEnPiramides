@@ -127,8 +127,7 @@ namespace PiramideRectangularFinalProg.Datos
 
         private string construirLinea(PiramideRectangular piramide)
         {
-            return $"{piramide.LadoBase}|{piramide.CantidadLados}|{(int)piramide.Material}" +
-                $"|{(int)piramide.Color}|{piramide.Altura}|{piramide.CalcularVolumen():F2}";
+            return $"{piramide.LadoBase}|{piramide.Altura}|{piramide.CantidadLados}|{(int)piramide.Material}|{(int)piramide.Color}";
         }
 
         public void Borrar(PiramideRectangular piramide)
